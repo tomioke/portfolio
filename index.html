@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" id="home">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Untuk membuat gambar bisa di klik dan menampilkan popup -->
+    <link rel="stylesheet" href="./assets/css/lightbox.css">
+    <!-- Menambahkan ikon via font awesome offline -->
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+
+    
+    <title>Website Portofolio</title>
+
+</head>
+<body>
+
+    <!-- Navbar awal -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#home">Sri Sumiatin</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ml-sm-5" id="navbarNav">
+            <!-- Supaya posisinya ada di sebelah kanan -->
+            <ul class="navbar-nav mr-auto"> 
+                <li class="nav-item">
+                    <a class="nav-link ml-sm-2" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ml-sm-2" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ml-sm-2" href="#about">About Us</a>
+                </li>
+            </ul>
+            <form class="form-inline">
+                <input class="form-control ml-sm-4 mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+        <!-- Buat scroll ketika diklik tombol yang ada di navbar akan mengarahkan ke halaman tertentu smooth scroll-->
+        <script>
+            $(document).ready(function () {
+                // Add smooth scrolling to all links
+                $("a").on('click', function (event) {
+
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+
+                        // Store hash
+                        var hash = this.hash;
+
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function () {
+
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } // End if
+                });
+            });
+        </script>
+    </nav>
+    <!-- Navbar Akhir -->
+    <!-- Awal Jumbotron -->
+    <div class="jumbotron text-center">
+        <img src="./assets/img/image-4.jpg" alt="image-4" class="rounded-circle">
+        <h1 style="margin-top: 20px; color: rgb(223, 217, 217);">Sri Sumiatin</h1>
+        <p style="font-size: 20px; color: rgb(223, 217, 217); margin-bottom: 195px;">Pegawai Negeri | Ibu Rumah Tangga</p>
+    </div>
+
+    <!-- Akhir Jumbotron -->
+
+    <!-- Awal Penggunaan Grid System pada About -->
+
+    <section> <!-- Untuk membagi tiap2 konten Tentang-->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 text-center">
+                            <h2 style="margin-top: 30px;">Tentang</h2>
+                            <hr>
+                        </div>
+                    </div>
+                    
+                    <div class="row" style="margin: 100px; margin-top: 30px;">
+                        <div class="col-sm-5 col-md-5 offset-sm-1"> <!-- Dibagi 2 bagian Soffset untuk memberi ruang kosong pada kolom -->
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam bibendum arcu nec elit iaculis interdum. Maecenas lorem
+                                quam, pulvinar vitae gravida vel, vestibulum non felis. Vestibulum sit amet lectus eros. Mauris sed tincidunt lectus, eu
+                                consectetur quam. Nullam vulputate interdum nisl quis ultrices. Nulla imperdiet efficitur leo vel ultricies. Praesent
+                                non accumsan nulla, nec vehicula ipsum. 
+                            </p>
+                        </div>
+
+                        <div class="col-sm-5 col-md-5">
+                            <!-- Dibagi 2 bagian -->
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam bibendum arcu nec elit iaculis interdum. Maecenas lorem
+                            quam, pulvinar vitae gravida vel, vestibulum non felis. Vestibulum sit amet lectus eros. Mauris sed tincidunt lectus, eu
+                            consectetur quam. Nullam vulputate interdum nisl quis ultrices. Nulla imperdiet efficitur leo vel ultricies. Praesent
+                            non accumsan nulla, nec vehicula ipsum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- Penggunaan Grid System pada About -->
+
+    <!-- Awal Portfolio -->
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 text-center">
+                    <h2 style="margin-top: 30px;">Portfolio</h2>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <!-- Menampilkan image ke dalam portfolio -->
+        <div class="row" style="margin: 50px;">
+            <div class="col-sm-4 col-md-4">
+                <a href="./assets/img/sd-1.jpg" data-lightbox="roadtrip"><img src="./assets/img/image-1.jpg" alt="image-1" class="img-thumbnail"></a>
+            </div>
+    
+            <div class="col-sm-4 col-md-4">
+                <a href="./assets/img/sd-2.jpg" data-lightbox="roadtrip"><img src="./assets/img/image-2.jpg" alt="image-2" class="img-thumbnail"></a>
+            </div>
+
+            <div class="col-sm-4 col-md-4">
+                <a href="./assets/img/sd-3.jpg" data-lightbox="roadtrip"><img src="./assets/img/image-3.jpg" alt="image-3" class="img-thumbnail"></a>
+            </div>
+
+            <div class="col-sm-4 col-md-4">
+                <a href="./assets/img/sd-7.jpg" data-lightbox="roadtrip"><img src="./assets/img/image-7.jpg" alt="image-4" class="img-thumbnail"></a>
+            </div>
+
+            <div class="col-sm-4 col-md-4">
+                <a href="./assets/img/sd-5.jpg" data-lightbox="roadtrip"><img src="./assets/img/image-5.jpg" alt="image-5" class="img-thumbnail"></a>
+            </div>
+
+            <div class="col-sm-4 col-md-4">
+                <a href="./assets/img/sd-6.jpg" data-lightbox="roadtrip"><img src="./assets/img/image-6.jpg" alt="image-6" class="img-thumbnail"></a>
+            </div>
+        </div>
+        <!-- Menampilkan gambar yang lebih besar ketika di klik -->
+        <script>
+            lightbox.option({
+                'resizeDuration': 200,
+                'wrapAround': true,
+                'alwaysShowNavOnTouchDevices': true
+            })
+        </script>
+    </section>
+
+    <!-- Akhir Portfolio -->
+
+    <!-- Contact -->
+
+    <section class="contact" id="contact">
+       <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 text-center">
+                    <h2 style="margin-top: 30px;">Contact</h2>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row" style="margin: 200px; margin-top: 30px;">
+                <div class="col-sm-12 col-md-12">
+                    <form>
+                        <div class="form-group">
+                            <label for="nama">Nama</label>
+                            <input type="text" id="nama" class="form-control" placeholder="Masukkan Nama Anda">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="Masukkan Email Anda">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telp">No Telp</label>
+                            <input type="tel" id="telp" class="form-control" placeholder="Masukkan No Telpon Anda">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pilih">Pilih Kategori</label>
+                            <select class="form-control" id="pilih">
+                                <option>----</option>
+                                <option>Graphics Designer</option>
+                                <option>Web Development</option>
+                                <option>Web Designer</option>
+                                <option>Web Apps Development</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pesan">Pesan</label>
+                            <textarea class="form-control" id="pesan" rows="5" placeholder="Masukkan Pesan Anda"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success">Kirim Pesan</button>
+
+                    </form>
+                </div>
+            </div>
+       </div>
+    </section>
+    <!-- Akhir Contact -->
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-12"> <!-- BAGIAN GRID -->
+                    <p>Copyright &copy; 2020 | Design by Tomi Irvan Oktavianto</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <a href="#youtube" class="btn btn-danger btn-sm mr-sm-3"><i class="fab fa-youtube"></i> Subscribe</a> <!-- mr-sm-3 adalah spasinya -->
+                    <a href="#facebook" class="btn btn-primary btn-social-icon btn-facebook btn-sm mr-sm-3"><i class="fab fa-facebook"></i> Add Profile</a>
+                    <a href="#instagram" class="btn btn-ungu btn-custom btn-social-icon btn-instagram btn-sm mr-sm-3"><i class="fab fa-instagram"></i> Follow Me</a>
+                </div>      
+            </div>
+        </div>
+    </footer>
+
+    <!-- Akhir Footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first-->
+    <script src="./assets/js/jquery-3.2.1.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/all.min.js"></script>
+    <!-- Untuk membuat gambar bisa di klik dan menampilkan popup -->
+    <script src="./assets/js/lightbox.js"></script>
+
+</body>
+</html>
