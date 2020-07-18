@@ -40,6 +40,8 @@ body.lb-disable-scrolling {
 }
 
 .lb-outerContainer {
+  max-width: 100%;
+  height: auto !important;
   position: relative;
   *zoom: 1;
   width: 250px;
@@ -95,16 +97,17 @@ body.lb-disable-scrolling {
 }
 
 .lb-prev, .lb-next {
+  position: absolute;
   height: 100%;
   cursor: pointer;
   display: block;
 }
 
 .lb-nav a.lb-prev {
-  width: 34%;
+  width: 64%;
   left: 0;
   float: left;
-  background: url(../images/prev.png) left 48% no-repeat;
+  background: url(../images/prev.png) left 50% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -122,7 +125,7 @@ body.lb-disable-scrolling {
   width: 64%;
   right: 0;
   float: right;
-  background: url(../images/next.png) right 48% no-repeat;
+  background: url(../images/next.png) right 50% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -182,8 +185,11 @@ body.lb-disable-scrolling {
 }
 
 .lb-data .lb-close {
+  position: absolute;
   display: block;
   float: right;
+  top: -20px;
+  right: 30px;
   width: 30px;
   height: 30px;
   background: url(../images/close.png) top right no-repeat;
@@ -195,6 +201,7 @@ body.lb-disable-scrolling {
   -moz-transition: opacity 0.2s;
   -o-transition: opacity 0.2s;
   transition: opacity 0.2s;
+  z-index: 999;
 }
 
 .lb-data .lb-close:hover {
